@@ -11,9 +11,24 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <style>
+      .container.jumbotron {
+        border: 1px solid black;
+        padding: 3rem;
+        margin-top: 3rem;
+        width: 70%;
+      }
+      .container.jumbotron h1 {
+        font-weight: 900;
+      }
+      .container.jumbotron button {
+        margin-top: 2rem;
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img src="logo-no-background.png" alt="logo" width="100px"
@@ -40,13 +55,23 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- Jumbotron -->
+    <div class="container jumbotron">
+      <h1>Smart and affordable travel solutions</h1>
+      <h4>
+        Save money and time with Travelwise. We are the travel agency that knows
+        how to get you the best value for your money. We have great deals on
+        flights, hotels, car rentals, and tours. We also have expert travel
+        agents who can help you plan your trip and give you tips and advice.
+        Whether you want to travel for business or pleasure, we can help you get
+        there. Contact us today and let us show you how to travel wisely.
+      </h4>
+      <button type="button" class="btn btn-primary">Learn more</button>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
