@@ -13,16 +13,39 @@
     />
     <style>
       .container.jumbotron {
-        border: 1px solid black;
         padding: 3rem;
         margin-top: 3rem;
         width: 70%;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 25px;
+        margin-bottom: 3rem;
       }
       .container.jumbotron h1 {
         font-weight: 900;
       }
       .container.jumbotron button {
         margin-top: 2rem;
+      }
+      .container-fluid .row {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 25px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .card {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+      .weekly-offers {
+        width: 100%;
+        font-size: 2.3rem;
+        font-weight: 700;
+        margin-top: 2rem;
+      }
+      #logo {
+        text-align: center;
+        margin-top: 3rem;
       }
     </style>
   </head>
@@ -31,7 +54,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><img src="logo-no-background.png" alt="logo" width="100px"
+          ><img src="logo-no-background.png" alt="navbar-logo" width="100px"
         /></a>
         <button
           class="navbar-toggler"
@@ -59,6 +82,15 @@
         </div>
       </div>
     </nav>
+    <div id="logo">
+      <img
+        src="logo-no-background.png"
+        alt="logo"
+        width="600"
+        style="text-align: center"
+      />
+    </div>
+
     <!-- Jumbotron -->
     <div class="container jumbotron">
       <h1>Smart and affordable travel solutions</h1>
@@ -72,6 +104,88 @@
       </h4>
       <button type="button" class="btn btn-primary">Learn more</button>
     </div>
+    <!-- Offerte della settimana -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Use Bootstrap grid system to make the cards responsive -->
+        <!-- Use col-6 for mobile, col-md-4 for medium, and col-lg-3 for large screens -->
+        <div class="weekly-offers">Weekly Offers</div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://b2003130.smushcdn.com/2003130/wp-content/uploads/2018/06/Caribbean-hammock-beach-1024x683.jpg?lossy=1&strip=1&webp=1"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNBcbSi7R71tqozJHgux_VQGRKf0rYRWQ7iw&usqp=CAU"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.pexels.com/photos/5227440/pexels-photo-5227440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="welcome-summer">Welcome Summer</div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
