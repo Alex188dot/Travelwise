@@ -16,7 +16,7 @@
         padding: 3rem;
         margin-top: 3rem;
         width: 70%;
-        border: 1px solid rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 25px;
         margin-bottom: 3rem;
       }
@@ -27,17 +27,21 @@
         margin-top: 2rem;
       }
       .container-fluid .row {
-        border: 1px solid rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 25px;
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 3rem;
       }
       .card {
         margin-top: 3rem;
         margin-bottom: 3rem;
+        margin-right: 1rem;
       }
-      .weekly-offers {
+      .weekly-offers,
+      .welcome-summer,
+      .daily-offer {
         width: 100%;
         font-size: 2.3rem;
         font-weight: 700;
@@ -46,6 +50,21 @@
       #logo {
         text-align: center;
         margin-top: 3rem;
+      }
+      .daily {
+        width: 70%;
+      }
+      .col-8 {
+        display: flex;
+        justify-content: center;
+      }
+      .col-8 img {
+        border-radius: 25px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+      .col-4 {
+        margin-top: 3.5rem;
       }
     </style>
   </head>
@@ -95,12 +114,12 @@
     <div class="container jumbotron">
       <h1>Smart and affordable travel solutions</h1>
       <h4>
-        Save money and time with Travelwise. We are the travel agency that knows
-        how to get you the best value for your money. We have great deals on
-        flights, hotels, car rentals, and tours. We also have expert travel
-        agents who can help you plan your trip and give you tips and advice.
-        Whether you want to travel for business or pleasure, we can help you get
-        there. Contact us today and let us show you how to travel wisely.
+        Save money and time with Travelwise. We know how to get you the best
+        value for your money. We have great deals on flights, hotels, car
+        rentals, and tours. We also have expert travel agents who can help you
+        plan your trip and give you tips and advice. Whether you want to travel
+        for business or pleasure, we can help you get there. Contact us today
+        and let us show you how to travel wisely.
       </h4>
       <button type="button" class="btn btn-primary">Learn more</button>
     </div>
@@ -118,12 +137,12 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Bahamas</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
           </div>
         </div>
@@ -135,12 +154,12 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Greece</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
           </div>
         </div>
@@ -152,12 +171,12 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Venice</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
           </div>
         </div>
@@ -169,20 +188,142 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Morocco</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Welcome Summer -->
     <div class="container-fluid">
       <div class="row">
         <div class="welcome-summer">Welcome Summer</div>
+        <div class="col">
+          <div class="card" style="width: 12rem">
+            <img
+              src="https://images.pexels.com/photos/1851481/pexels-photo-1851481.jpeg?auto=compress&cs=tinysrgb&w=800"
+              class="card-img-top"
+              alt="egypt"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Egypt</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Let's go!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 12rem">
+            <img
+              src="https://images.pexels.com/photos/2563681/pexels-photo-2563681.jpeg?auto=compress&cs=tinysrgb&w=800"
+              class="card-img-top"
+              alt="Tunisia"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tunisia</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Let's go!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 12rem">
+            <img
+              src="https://images.pexels.com/photos/15031960/pexels-photo-15031960/free-photo-of-maldives-island-water-villa-sunset.jpeg?auto=compress&cs=tinysrgb&w=800"
+              class="card-img-top"
+              alt="Polynesia"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Polynesia</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Let's go!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 12rem">
+            <img
+              src="https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=800"
+              class="card-img-top"
+              alt="Peru"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Peru</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Let's go!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 12rem">
+            <img
+              src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=800"
+              class="card-img-top"
+              alt="Canada"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Canada</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Let's go!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 12rem">
+            <img
+              src="https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=800"
+              class="card-img-top"
+              alt="Turkey"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Turkey</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Let's go!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid daily">
+      <div class="row">
+        <div class="daily-offer">Daily Offer</div>
+        <div class="col-8">
+          <img
+            src="https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Maldives"
+            width="70%"
+          />
+        </div>
+        <div class="col-4">
+          The Maldives are known for their pristine beaches, turquoise waters,
+          and luxury resorts. The islands are also famous for their world-class
+          diving and snorkeling opportunities. They are also a popular
+          destination for honeymooners and travelers looking for a relaxing
+          beach vacation.
+        </div>
       </div>
     </div>
 
