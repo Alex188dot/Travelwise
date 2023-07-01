@@ -37,7 +37,7 @@
       .card {
         margin-top: 3rem;
         margin-bottom: 3rem;
-        margin-right: 1rem;
+        margin-right: 0.8rem;
       }
       .weekly-offers,
       .welcome-summer,
@@ -54,17 +54,20 @@
       .daily {
         width: 70%;
       }
-      .col-8 {
+      .col-lg-8 {
         display: flex;
         justify-content: center;
       }
-      .col-8 img {
+      .col-lg-8 img {
         border-radius: 25px;
         margin-bottom: 2rem;
         margin-top: 2rem;
       }
-      .col-4 {
+      .col-lg-4 {
         margin-top: 3.5rem;
+      }
+      .book-now {
+        margin-top: 1.3rem;
       }
     </style>
   </head>
@@ -101,12 +104,13 @@
         </div>
       </div>
     </nav>
-    <div id="logo">
+    <div class="container" id="logo">
       <img
         src="logo-no-background.png"
         alt="logo"
         width="600"
         style="text-align: center"
+        class="img-fluid"
       />
     </div>
 
@@ -307,22 +311,26 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid daily">
+    <!-- Daily Offer -->
+    <div class="container-fluid daily d-none d-sm-block">
       <div class="row">
         <div class="daily-offer">Daily Offer</div>
-        <div class="col-8">
+        <div class="col-lg-8 order-lg-1">
           <img
             src="https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="Maldives"
             width="70%"
           />
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 order-lg-2">
           The Maldives are known for their pristine beaches, turquoise waters,
           and luxury resorts. The islands are also famous for their world-class
           diving and snorkeling opportunities. They are also a popular
           destination for honeymooners and travelers looking for a relaxing
           beach vacation.
+          <p>
+            <a href="#" class="btn btn-primary book-now">Book now</a>
+          </p>
         </div>
       </div>
     </div>
