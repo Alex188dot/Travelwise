@@ -46,16 +46,13 @@
         margin-bottom: 3rem;
       }
       .card {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        margin-right: 0.8rem;
+        margin: 3rem 0.4rem;
         transition: transform 0.2s ease-in-out;
       }
 
       .welcome .card {
-        -webkit-box-shadow: 45px 42px 68px -23px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 45px 42px 68px -23px rgba(0, 0, 0, 0.75);
-        box-shadow: 45px 42px 68px -23px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.68);
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.68);
       }
 
       .card:hover {
@@ -96,11 +93,34 @@
       .col-lg-4 {
         margin-top: 3.5rem;
       }
-      .book-now {
+      .book-now,
+      .contact-us {
         margin-top: 1.3rem;
+        text-align: center;
+      }
+      .contact-us {
+        margin-bottom: 1.3rem;
       }
       .carousel-item {
         margin-top: 1.3rem;
+      }
+      .author {
+        font-size: 0.9rem;
+        font-style: italic;
+      }
+      .material-symbols-outlined {
+        color: rgb(231, 231, 10);
+      }
+      .footer {
+        text-align: center;
+      }
+      .address {
+        font-style: italic;
+        font-size: 0.8rem;
+      }
+      .disclaimer {
+        font-size: 0.7rem;
+        margin-top: -0.9rem;
       }
     </style>
   </head>
@@ -131,10 +151,19 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#weekly-offers">Weekly Offers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#welcome-summer">Welcome Summer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#daily-offer">Daily Offer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#last-minute">Last minute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
           </ul>
         </div>
@@ -163,8 +192,11 @@
       </p>
       <button type="button" class="btn btn-primary">Learn more</button>
     </div>
-    <!-- Offerte della settimana -->
-    <div class="container-fluid g-0 rounded-3">
+    <!-- Weekly Offers -->
+    <div
+      id="weekly-offers"
+      class="container-fluid g-0 rounded-3 justify-content-center"
+    >
       <div class="row">
         <div class="weekly-offers">Weekly Offers</div>
         <div class="col">
@@ -172,7 +204,7 @@
             <img
               src="https://b2003130.smushcdn.com/2003130/wp-content/uploads/2018/06/Caribbean-hammock-beach-1024x683.jpg?lossy=1&strip=1&webp=1"
               class="card-img-top"
-              alt="..."
+              alt="bahamas"
             />
             <div class="card-body">
               <h5 class="card-title">Bahamas</h5>
@@ -189,7 +221,7 @@
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNBcbSi7R71tqozJHgux_VQGRKf0rYRWQ7iw&usqp=CAU"
               class="card-img-top"
-              alt="..."
+              alt="greece"
             />
             <div class="card-body">
               <h5 class="card-title">Greece</h5>
@@ -206,7 +238,7 @@
             <img
               src="https://images.pexels.com/photos/5227440/pexels-photo-5227440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               class="card-img-top"
-              alt="..."
+              alt="venice"
             />
             <div class="card-body">
               <h5 class="card-title">Venice</h5>
@@ -223,7 +255,7 @@
             <img
               src="https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               class="card-img-top"
-              alt="..."
+              alt="morocco"
             />
             <div class="card-body">
               <h5 class="card-title">Morocco</h5>
@@ -238,7 +270,7 @@
       </div>
     </div>
     <!-- Welcome Summer -->
-    <div class="container-fluid welcome g-0 rounded-3">
+    <div id="welcome-summer" class="container-fluid welcome g-0 rounded-3">
       <div class="row">
         <div class="welcome-summer">Welcome Summer</div>
         <div class="col">
@@ -251,8 +283,7 @@
             <div class="card-body">
               <h5 class="card-title">Egypt</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Experience the history of the land of the pharaohs.
               </p>
               <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
@@ -263,13 +294,12 @@
             <img
               src="https://images.pexels.com/photos/2563681/pexels-photo-2563681.jpeg?auto=compress&cs=tinysrgb&w=800"
               class="card-img-top"
-              alt="Tunisia"
+              alt="tunisia"
             />
             <div class="card-body">
               <h5 class="card-title">Tunisia</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Discover the beauty and diversity of the Mediterranean gem.
               </p>
               <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
@@ -280,13 +310,12 @@
             <img
               src="https://images.pexels.com/photos/15031960/pexels-photo-15031960/free-photo-of-maldives-island-water-villa-sunset.jpeg?auto=compress&cs=tinysrgb&w=800"
               class="card-img-top"
-              alt="Polynesia"
+              alt="polynesia"
             />
             <div class="card-body">
               <h5 class="card-title">Polynesia</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Escape to the paradise of islands and lagoons.
               </p>
               <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
@@ -297,13 +326,12 @@
             <img
               src="https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=800"
               class="card-img-top"
-              alt="Peru"
+              alt="peru"
             />
             <div class="card-body">
               <h5 class="card-title">Peru</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Explore the rich and varied culture of the Andean nation.
               </p>
               <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
@@ -314,13 +342,12 @@
             <img
               src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=800"
               class="card-img-top"
-              alt="Canada"
+              alt="canada"
             />
             <div class="card-body">
               <h5 class="card-title">Canada</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Enjoy the natural wonders and delights of the great north.
               </p>
               <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
@@ -331,13 +358,12 @@
             <img
               src="https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=800"
               class="card-img-top"
-              alt="Turkey"
+              alt="turkey"
             />
             <div class="card-body">
               <h5 class="card-title">Turkey</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Immerse yourself in the crossroads of civilizations.
               </p>
               <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
@@ -346,13 +372,16 @@
       </div>
     </div>
     <!-- Daily Offer -->
-    <div class="container-fluid daily d-none d-sm-block g-0 rounded-3">
+    <div
+      id="daily-offers"
+      class="container-fluid daily d-none d-sm-block g-0 rounded-3"
+    >
       <div class="row">
         <div class="daily-offer">Daily Offer</div>
         <div class="col-lg-8 order-lg-1">
           <img
             src="https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Maldives"
+            alt="maldives"
             width="70%"
           />
         </div>
@@ -362,14 +391,14 @@
           diving and snorkeling opportunities. They are also a popular
           destination for honeymooners and travelers looking for a relaxing
           beach vacation.
-          <p>
-            <a href="#" class="btn btn-primary book-now">Book now</a>
-          </p>
+          <div class="book-now">
+            <a href="#" class="btn btn-primary">Book now</a>
+          </div>
         </div>
       </div>
     </div>
     <!-- Last minute -->
-    <div class="container-fluid welcome g-0 rounded-3">
+    <div id="last-minute" class="container-fluid welcome g-0 rounded-3">
       <div class="row">
         <div class="welcome-summer">Last Minute</div>
         <div class="col">
@@ -382,8 +411,7 @@
             <div class="card-body">
               <h5 class="card-title">Santorini, Greece</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Experience the magic of the blue and white paradise.
               </p>
               <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
@@ -399,8 +427,7 @@
             <div class="card-body">
               <h5 class="card-title">Tuscany, Italy</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Discover the beauty and charm of the Italian countryside.
               </p>
               <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
@@ -411,13 +438,12 @@
             <img
               src="https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg?auto=compress&cs=tinysrgb&w=800"
               class="card-img-top"
-              alt="Israel"
+              alt="israel"
             />
             <div class="card-body">
               <h5 class="card-title">Israel</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Explore the ancient and modern wonders of the Holy Land.
               </p>
               <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
@@ -428,13 +454,12 @@
             <img
               src="https://images.pexels.com/photos/5857863/pexels-photo-5857863.jpeg?auto=compress&cs=tinysrgb&w=800"
               class="card-img-top"
-              alt="tokio"
+              alt="tokyo"
             />
             <div class="card-body">
               <h5 class="card-title">Tokyo, Japan</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Immerse yourself in the vibrant city of contrasts.
               </p>
               <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
@@ -445,13 +470,12 @@
             <img
               src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=800"
               class="card-img-top"
-              alt="Bali"
+              alt="bali"
             />
             <div class="card-body">
               <h5 class="card-title">Bali, Indonesia</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Relax and rejuvenate in the island of the gods.
               </p>
               <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
@@ -462,13 +486,12 @@
             <img
               src="https://images.pexels.com/photos/2104742/pexels-photo-2104742.jpeg?auto=compress&cs=tinysrgb&w=800"
               class="card-img-top"
-              alt="San Francisco"
+              alt="san francisco"
             />
             <div class="card-body">
               <h5 class="card-title">San Francisco</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Enjoy the diversity and culture of the Golden Gate city.
               </p>
               <a href="#" class="btn btn-primary">Let's go!</a>
             </div>
@@ -477,27 +500,29 @@
       </div>
     </div>
     <!-- Testimonials -->
-    <div class="container-fluid g-0 rounded-3" style="width: 50%">
+    <div
+      id="testimonials"
+      class="container-fluid g-0 rounded-3"
+      style="width: 50%"
+    >
       <div class="row">
         <div class="testimonials">Testimonials</div>
-        <div
-          data-bs-ride="carousel"
-          id="carouselExampleFade"
-          class="carousel slide carousel-fade"
-        >
+        <div data-bs-ride="carousel" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <p>
-                Amzing experience, would do it again! We had a blast, it was
-                great Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus qui dolore quaerat molestiae voluptatibus explicabo
-                illo nobis pariatur earum ratione. Consectetur voluptate hic
-                ipsa et similique dolorem maiores magnam doloribus! Lorem ipsum
-                dolor sit amet consectetur, adipisicing elit. Cum vero nobis
-                sint possimus in! Odio dolorum consequatur sapiente labore,
-                eius, molestias earum quasi fugiat accusantium dolor dignissimos
-                consectetur ratione culpa!
+                I had a wonderful experience with Travelwise, the best travel
+                agency I have ever used. They helped me plan my dream vacation
+                to Greece, taking care of every detail and offering great deals
+                on flights, hotels, tours and activities. The staff was
+                friendly, professional and knowledgeable, and they always
+                responded to my questions and requests promptly. They made
+                everything easy and stress-free for me, and I enjoyed every
+                moment of my trip. I highly recommend Travelwise to anyone
+                looking for a reliable and affordable travel agency. Thank you
+                Travelwise for making my vacation unforgettable! 🙌
               </p>
+              <p class="author">Alan D. from USA</p>
               <p>
                 <span class="material-symbols-outlined"> star </span
                 ><span class="material-symbols-outlined"> star </span
@@ -508,12 +533,18 @@
             </div>
             <div class="carousel-item">
               <p>
-                Amzing experience, would do it again! We had a blast, it was
-                great Lorem ipsum dolor sitAAAAAAAA AAAAA AAAAA D F GGGero nobis
-                sint possimus in! Odio dolorum consequatur sapiente labore,
-                eius, molestias earum quasi fugiat accusantium dolor dignissimos
-                consectetur ratione culpa!
+                Travelwise is a great travel agency that offers excellent
+                service and value. I booked a trip to Thailand with them and I
+                was very impressed by their professionalism and attention to
+                detail. They arranged everything for me, from flights and hotels
+                to tours and transfers. They also gave me useful tips and advice
+                on what to see and do in Thailand. The only reason I'm giving
+                them 4.5 stars instead of 5 is because there was a minor issue
+                with the hotel reservation, but they resolved it quickly and
+                efficiently. Overall, I had a fantastic time in Thailand thanks
+                to Travelwise and I would definitely use them again.
               </p>
+              <p class="author">Emma R. from Germany</p>
               <p>
                 <span
                   ><span class="material-symbols-outlined"> star </span
@@ -526,16 +557,42 @@
             </div>
             <div class="carousel-item">
               <p>
-                Amzing experience, would do it again! We had a blast, it was
-                great Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus qui dolore quaerat molestiae voluptatibus explicabo
-                illo nobis pariatur earum ratione. Consectetur voluptate hic
-                ipsa et similique dolorem maiores magnam doloribus! Lorem ipsum
-                dolor sit amet consectetur, adipisicing elit. Cum vero nobis
-                sint possimus in! Odio dolorum consequatur sapiente labore,
-                eius, molestias earum quasi fugiat accusantium dolor dignissimos
-                consectetur ratione culpa!
+                Travelwise is the best travel agency I have ever dealt with.
+                They organized a perfect trip to Japan for me and my family, and
+                we had an amazing time. They took care of everything, from
+                finding the best deals on flights and hotels to booking the most
+                interesting and fun tours and activities. They were also very
+                responsive and helpful whenever we had any questions or
+                concerns. They went above and beyond to make sure we had a
+                memorable and enjoyable trip. I can't thank them enough for
+                their outstanding service and quality. I highly recommend
+                Travelwise to anyone looking for a trustworthy and affordable
+                travel agency.
               </p>
+              <p class="author">Harry A. from England</p>
+              <p>
+                <span class="material-symbols-outlined"> star </span
+                ><span class="material-symbols-outlined"> star </span
+                ><span class="material-symbols-outlined"> star </span
+                ><span class="material-symbols-outlined"> star </span
+                ><span class="material-symbols-outlined"> star </span>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p>
+                I'm so glad I chose Travelwise to plan my trip to France. They
+                were amazing from start to finish. They listened to my
+                preferences and budget and created a customized itinerary that
+                suited me perfectly. They booked the best flights and hotels for
+                me, and also suggested some wonderful tours and activities that
+                I loved. They were always available and friendly whenever I
+                needed them, and they made sure everything went smoothly during
+                my trip. They exceeded my expectations in every way. Travelwise
+                is a top-notch travel agency that I would recommend to anyone.
+                Merci beaucoup Travelwise for making my trip to France a dream
+                come true! 🇫🇷
+              </p>
+              <p class="author">John D. from Canada</p>
               <p>
                 <span class="material-symbols-outlined"> star </span
                 ><span class="material-symbols-outlined"> star </span
@@ -566,6 +623,20 @@
         </div>
       </div>
     </div>
+    <div class="contact-us">
+      <a href="#" class="btn btn-primary">Contact us</a>
+    </div>
+    <footer class="footer">
+      <address class="address">
+        Travelwise 12 High Street Bath, Somerset BA1 2AB United Kingdom
+      </address>
+      <div class="disclaimer">
+        © 2023 Travelwise. All rights reserved. Travelwise is a registered
+        trademark of Travelwise Ltd. Travelwise does not accept any liability
+        for any loss or damage arising from the use of this website or its
+        contents.
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
