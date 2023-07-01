@@ -14,5 +14,5 @@ Travelwise is a travel agency website that showcases various destinations and of
 ## Credits
 
 - Bootstrap 5: https://getbootstrap.com/
-- Images: https://unsplash.com/
-- Icons: https://fontawesome.com/
+- Images: https://pexels.com/
+- Icons: https://fonts.google.com/icons/
