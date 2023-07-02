@@ -122,6 +122,10 @@
         font-size: 0.7rem;
         margin-top: -0.9rem;
       }
+      .hide-unhide {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
     </style>
   </head>
   <body>
@@ -365,20 +369,38 @@
       </div>
     </div>
     <!-- Daily Offer -->
+    <div class="hide-unhide d-none d-sm-block">
+      <a
+        class="btn btn-primary"
+        data-bs-toggle="collapse"
+        href="#multiCollapseExample2"
+        role="button"
+        aria-expanded="false"
+        aria-controls="multiCollapseExample2"
+        >Hide/Unhide Daily Offer</a
+      >
+    </div>
     <div
       id="daily-offers"
-      class="container-fluid daily d-none d-sm-block g-0 rounded-3"
+      class="container-fluid daily d-none d-sm-block g-0 rounded-3 collapse multi-collapse"
+      id="multiCollapseExample2"
     >
       <div class="row">
         <div class="daily-offer">Daily Offer</div>
-        <div class="col-lg-8 order-lg-1">
+        <div
+          class="col-lg-8 order-lg-1 collapse multi-collapse"
+          id="multiCollapseExample2"
+        >
           <img
             src="https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="maldives"
             width="70%"
           />
         </div>
-        <div class="col-lg-4 order-lg-2">
+        <div
+          class="col-lg-4 order-lg-2 collapse multi-collapse"
+          id="multiCollapseExample2"
+        >
           The Maldives are known for their pristine beaches, turquoise waters,
           and luxury resorts. The islands are also famous for their world-class
           diving and snorkeling opportunities. They are also a popular
@@ -390,6 +412,7 @@
         </div>
       </div>
     </div>
+
     <!-- Last minute -->
     <div id="last-minute" class="container-fluid welcome g-0 rounded-3">
       <div class="row">
@@ -621,7 +644,7 @@
         type="button"
         class="btn btn-primary contact-us"
         data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
+        data-bs-target="#contactModal"
         data-bs-whatever="Travelwise"
       >
         Contact us
@@ -629,15 +652,15 @@
     </div>
     <div
       class="modal fade"
-      id="exampleModal"
+      id="contactModal"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="contactModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+            <h1 class="modal-title fs-5" id="contactModalLabel">New message</h1>
             <button
               type="button"
               class="btn-close"
