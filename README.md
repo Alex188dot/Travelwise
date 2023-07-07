@@ -1,7 +1,7 @@
 ## m3-d4
 ## Travelwise
 
-Travelwise is a travel agency website that showcases various destinations and offers for travelers. It is built with Bootstrap 5, HTML, CSS and JavaScript. To see the final version of the website, please visit: https://alex188dot.github.io/m3-d4/
+Travelwise is a travel agency website that showcases various destinations and offers for travelers. It is built with Bootstrap 5, HTML, CSS and JavaScript. To see the final version of the website, please visit: https://alex188dot.github.io/epicode-month3-day4/
 
 ## Features
 
